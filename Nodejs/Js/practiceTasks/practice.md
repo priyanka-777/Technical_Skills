@@ -10,3 +10,5 @@ objects
 arrays and methods
 rest and spread operators
 template literals
+Callbacks
+promises

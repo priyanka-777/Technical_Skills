@@ -21,3 +21,7 @@ intro to functional programming- https://www.toptal.com/javascript/functional-pr
 Immutability- https://clouddevs.com/javascript/immutability/#:~:text=This%20article%20explores%20the%20concept%20of%20function%20immutability,state%20of%20variables%20or%20objects%20outside%20their%20scope.
 
 callback functions - https://www.freecodecamp.org/news/what-is-a-callback-function-in-javascript/
+
+promises - https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-beginners/
+
+callbacks and promises (async programming)- https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
