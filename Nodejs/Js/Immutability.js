@@ -5,7 +5,7 @@
 
 function addItemToArray(arr, item) {
     // Return a new array instead of mutating the original one
-    return [...arr, item];
+    return [...arr, item]; // used spread operator here
 }
 
 const originalArray = [1, 2, 3];
