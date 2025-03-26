@@ -12,3 +12,6 @@ rest and spread operators
 template literals
 Callbacks
 promises
+Error Handling(try , catch , throw and finally)
+Immutability
+Pure functions
