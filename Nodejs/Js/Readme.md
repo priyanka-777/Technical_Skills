@@ -25,3 +25,5 @@ callback functions - https://www.freecodecamp.org/news/what-is-a-callback-functi
 promises - https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-beginners/
 
 callbacks and promises (async programming)- https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
+
+error handling - https://www.freecodecamp.org/news/try-catch-in-javascript/

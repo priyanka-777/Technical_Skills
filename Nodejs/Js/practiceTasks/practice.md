@@ -12,3 +12,5 @@ rest and spread operators
 template literals
 Callbacks
 promises
+async/await
+error handlers (try,catch)
