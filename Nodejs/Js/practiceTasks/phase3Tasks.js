@@ -19,3 +19,26 @@ function calculateFactorial(num){
     return factorial;
 }
 console.log(calculateFactorial(3));
+
+//Use closures to create a counter function.
+
+function closure(){
+    let count=0;
+    return{
+        increment:()=>console.log(++count),
+        decrement:()=>console.log(--count),
+        reset:()=>{
+            count=0;
+            console.log("count resets to 0");
+        },
+        getCount: () => count
+
+    }
+    
+}
+
+const callClosure=closure();
+callClosure.increment();
+callClosure.increment();
+callClosure.decrement();
+console.log(callClosure.getCount());
