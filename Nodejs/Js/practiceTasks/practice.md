@@ -12,3 +12,5 @@ rest and spread operators
 template literals
 Callbacks
 promises
+high order functions 
+recursion
