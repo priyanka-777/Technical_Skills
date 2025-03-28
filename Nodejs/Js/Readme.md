@@ -25,3 +25,13 @@ callback functions - https://www.freecodecamp.org/news/what-is-a-callback-functi
 promises - https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-beginners/
 
 callbacks and promises (async programming)- https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
+
+recursion- https://www.freecodecamp.org/news/recursion-in-javascript/
+
+optional chaining - https://www.freecodecamp.org/news/optional-chaining-javascript/
+
+modules(import and export)-https://www.freecodecamp.org/news/javascript-modules/
+
+event loop - https://www.freecodecamp.org/news/javascript-concurrency-model-and-event-loop/
+prototype & kinheritance - https://www.freecodecamp.org/news/prototypes-and-inheritance-in-javascript/
+
