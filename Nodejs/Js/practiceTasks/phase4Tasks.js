@@ -14,3 +14,19 @@ const fetchData = async()=>{
     }
 }
 fetchData();
+
+//Implement a debounce function.
+function debounce(func, delay) {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);  // Clears the previous timer if function is called again
+        timer = setTimeout(() => func(...args), delay); // Sets a new timer
+    };
+}
+const log = () => {
+    console.log("Logging...");
+}
+
+const debouncedLog = debounce(log, 5000);
+debouncedLog();
+

@@ -35,3 +35,7 @@ modules(import and export)-https://www.freecodecamp.org/news/javascript-modules/
 event loop - https://www.freecodecamp.org/news/javascript-concurrency-model-and-event-loop/
 prototype & kinheritance - https://www.freecodecamp.org/news/prototypes-and-inheritance-in-javascript/
 
+api calls - https://www.freecodecamp.org/news/make-api-calls-in-javascript/
+
+DOM- https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/
+
