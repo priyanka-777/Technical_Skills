@@ -15,3 +15,9 @@ promises
 Error Handling(try , catch , throw and finally)
 Immutability
 Pure functions
+async/await
+error handlers (try,catch)
+ES6+ Features (async/await, optional chaining, nullish coalescing)
+Modules (import, export)
+Event Loop & Asynchronous JS
+prototypes & inheritance

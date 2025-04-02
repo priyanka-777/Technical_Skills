@@ -29,4 +29,22 @@ promises - https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-b
 
 callbacks and promises (async programming)- https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
 
+
 pure functions - https://www.freecodecamp.org/news/what-is-a-pure-function-in-javascript-acb887375dfe/
+
+error handling - https://www.freecodecamp.org/news/try-catch-in-javascript/
+
+recursion- https://www.freecodecamp.org/news/recursion-in-javascript/
+
+optional chaining - https://www.freecodecamp.org/news/optional-chaining-javascript/
+
+modules(import and export)-https://www.freecodecamp.org/news/javascript-modules/
+
+event loop - https://www.freecodecamp.org/news/javascript-concurrency-model-and-event-loop/
+prototype & kinheritance - https://www.freecodecamp.org/news/prototypes-and-inheritance-in-javascript/
+
+api calls - https://www.freecodecamp.org/news/make-api-calls-in-javascript/
+
+DOM- https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/
+
+
