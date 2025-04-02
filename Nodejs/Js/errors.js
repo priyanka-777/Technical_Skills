@@ -1,11 +1,16 @@
-// in try and catch way we can use throw keyword 
-// by using throw keyword we can throw the error whatever we want instead of js error.
 
-let num =6
+// we can use nested try blocks - try block inside another try .
+//Note that try/catch can be written in three different ways: try...catch, try...finally, try...catch...finally)
+// finally block will execute always whatever try / catch executes.
 try { 
-if(isNaN(num)) throw "Not a number !" 
-else if (num>40) throw "enter number less than 40"
-else if (num <= 30) throw "Greater than 30 " 
-}catch(e){
-console.log(e) ;
-}
+    try { 
+    throw new Error('inner catch error');
+    } /*catch(e){ //comment this catch out
+    console.log(e) 
+    } */finally { 
+    console.log('finally'); 
+    } 
+    throw new Error("outer catch error") 
+    } catch (ex) { 
+    console.log(ex);
+    }

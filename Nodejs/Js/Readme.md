@@ -19,12 +19,18 @@ High Order Functions - https://www.freecodecamp.org/news/higher-order-functions-
 intro to functional programming- https://www.toptal.com/javascript/functional-programming-javascript
 
 Immutability- https://clouddevs.com/javascript/immutability/#:~:text=This%20article%20explores%20the%20concept%20of%20function%20immutability,state%20of%20variables%20or%20objects%20outside%20their%20scope.
+and -https://www.freecodecamp.org/news/immutability-in-javascript-with-examples/
+
+frozen objects - https://www.freecodecamp.org/news/javascript-immutability-frozen-objects-with-examples/
 
 callback functions - https://www.freecodecamp.org/news/what-is-a-callback-function-in-javascript/
 
 promises - https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-beginners/
 
 callbacks and promises (async programming)- https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
+
+
+pure functions - https://www.freecodecamp.org/news/what-is-a-pure-function-in-javascript-acb887375dfe/
 
 error handling - https://www.freecodecamp.org/news/try-catch-in-javascript/
 
@@ -40,4 +46,5 @@ prototype & kinheritance - https://www.freecodecamp.org/news/prototypes-and-inhe
 api calls - https://www.freecodecamp.org/news/make-api-calls-in-javascript/
 
 DOM- https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/
+
 
