@@ -12,3 +12,7 @@ rest and spread operators
 template literals
 Callbacks
 promises
+ES6+ Features (async/await, optional chaining, nullish coalescing)
+Modules (import, export)
+Event Loop & Asynchronous JS
+prototypes & inheritance
