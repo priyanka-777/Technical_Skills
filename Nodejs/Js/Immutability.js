@@ -1,3 +1,24 @@
+// datatypes are two types 
+// 1 . primitive type - uses stack and stores in it, they are immutable
+// 2. reference data types - uses heap to store while stack stores the referenceid for each type from heap.
+
+let arr1 =[1,2,3]
+let arr2 = arr1;
+arr1.push(4);
+console.log(arr2); // [1,2,3,4] - because we are refering to same array in heap
+
+// to avoid this we need to use spread operator for objects we need to use object.assign 
+
+let object1={
+    "name":"priya",
+    "age":"20"
+}
+let object2 = Object.assign({},object1); // Object.assign(target, source)
+
+//To prevent object mutability, you can use the Object.preventExtensions(), Object.seal(), and Object.freeze() methods.
+
+// even if we use const on object declaration , still we can alter them.
+
 //Immutability ensures that functions do not have side effects—meaning they do not alter the state of variables or objects outside their scope. 
 
 //1.Avoid mutations in functions, means return new copy instead of editing original one.
