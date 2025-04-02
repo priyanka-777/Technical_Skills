@@ -26,6 +26,8 @@ promises - https://www.freecodecamp.org/news/what-is-promise-in-javascript-for-b
 
 callbacks and promises (async programming)- https://www.freecodecamp.org/news/javascript-promises-async-await-and-promise-methods/
 
+error handling - https://www.freecodecamp.org/news/try-catch-in-javascript/
+
 recursion- https://www.freecodecamp.org/news/recursion-in-javascript/
 
 optional chaining - https://www.freecodecamp.org/news/optional-chaining-javascript/
