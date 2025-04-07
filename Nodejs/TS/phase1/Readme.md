@@ -24,7 +24,7 @@ Creates a `tsconfig.json` file to configure TypeScript settings.
 ```sh
 tsc filename.ts
 ```
-Converts the TypeScript file (`.ts`) into JavaScript (`.js`).
+Converts the TypeScript file (`.ts`) into JavaScript (`.js`).So that we can run js file as `node fileName.js`
 
 ### 5. Watch for File Changes & Auto-Compile
 ```sh
@@ -36,61 +36,26 @@ Automatically recompiles TypeScript files when changes are detected.
 ```sh
 npx ts-node filename.ts
 ```
-Runs TypeScript files without needing to compile them separately.
+Runs TypeScript files without needing to compile them separately.Instead of two commands to convert to js and run in js ,we can use this command directly.
 
-### 7. Change Execution Policy in PowerShell (Fix Execution Errors)
-```sh
-Set-ExecutionPolicy Unrestricted -Scope CurrentUser
-```
-Allows running scripts in PowerShell (needed if you get script execution errors).
-
-### 8. Run TypeScript in VS Code Terminal (PowerShell Fix)
-```sh
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-Allows running locally created TypeScript scripts in PowerShell.
-
-### 9. Compile and Build the TypeScript Project
+### 7. Compile and Build the TypeScript Project
 ```sh
 npm run build
 ```
-Uses `tsconfig.json` settings to compile the entire project.
+Uses `tsconfig.json` settings to compile the entire project.when we run this command whole ts code will be turn into js code by creating dist folder.
 
-### 10. Preview the TypeScript Project in a Browser
+### 8. Preview the TypeScript Project in a Browser
 ```sh
 npm run preview
 ```
 Starts a local server to preview the compiled TypeScript project.
 
-### 11. Start a Development Server
+### 9. Start a Development Server
 ```sh
 npm run dev
 ```
 Runs the TypeScript/JavaScript project in development mode with hot reload.
 
-### 12. List All Previously Used Commands (CMD Only)
-```sh
-doskey /history
-```
-Displays a history of commands used in the current session.
-
-### 13. List Only the Last 50 Commands (PowerShell)
-```sh
-Get-History | Select-Object -Last 50
-```
-Shows the last 50 commands used in PowerShell.
-
-### 14. Run a TypeScript File in Command Prompt (CMD)
-```sh
-tsc filename.ts && node filename.js
-```
-Compiles and runs the TypeScript file in a single command.
-
-### 15. Open the TypeScript Project in VS Code
-```sh
-code .
-```
-Opens the current directory in VS Code.
 
 ## Sources
 
