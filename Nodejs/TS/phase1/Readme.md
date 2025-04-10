@@ -19,6 +19,21 @@ Displays the installed TypeScript version.
 tsc --init
 ```
 Creates a `tsconfig.json` file to configure TypeScript settings.
+# TypeScript Project Without Any Bundler
+
+Follow these steps to create and run a simple TypeScript project without using any bundler like Webpack or Vite.
+
+```bash
+npm init -y
+npm install typescript --save-dev
+npx tsc --init
+npx tsc script.ts
+node script.js
+```
+# TypeScript Project With vite Bundler
+```
+npm create vite@latest .
+```
 
 ### 4. Compile a TypeScript File
 ```sh
