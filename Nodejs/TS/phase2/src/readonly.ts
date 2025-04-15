@@ -18,3 +18,19 @@ type User = {
 const numbers :readonly number[]=[1,2,3,4]
 // numbers.push(5) will throw error
 
+// it is same as const but we can use as const only on js code but not on typescript code like type and all 
+// so we use readonly on them
+
+type todo={
+  title:string,
+  completed:boolean
+}
+
+type FinalTodo = Readonly<todo>
+
+const todo ={
+  name:"sdf",
+  completed:false
+} as const
+
+type test = typeof todo
