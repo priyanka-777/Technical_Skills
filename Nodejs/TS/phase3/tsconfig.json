@@ -16,9 +16,9 @@
     /* Linting */
     "strict": true,
     "noUnusedLocals": false,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "../phase3/src/import.ts", "../phase3/src/user.ts", "../phase3/src/debugging.ts"]
+  "include": ["src"]
 }
