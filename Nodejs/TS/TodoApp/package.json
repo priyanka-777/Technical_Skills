@@ -1,5 +1,5 @@
 {
-  "name": "phase2",
+  "name": "todoapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.16",
     "typescript": "~5.7.2",
-    "vite": "^6.2.5"
-  },
-  "dependencies": {
-    "date-fns": "^4.1.0",
-    "lodash": "^4.17.21"
+    "vite": "^6.3.1"
   }
 }

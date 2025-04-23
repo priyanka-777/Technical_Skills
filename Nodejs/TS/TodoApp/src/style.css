@@ -1,0 +1,62 @@
+/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Style for todo list items */
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-size: 18px; /* Increased font size */
+}
+
+/* Strike-through text when checkbox is checked */
+.label-input:checked + .label-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Label text styling */
+.label-text {
+  margin-left: 10px;
+  font-size: 18px; /* Increased font size */
+}
+
+/* Style the checkbox */
+.label-input {
+  width: 20px;
+  height: 20px;
+}
+
+/* Style the delete button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Style the form */
+#new-todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+#new-todo-form label,
+#new-todo-form input,
+#new-todo-form button {
+  width: 100%;
+  font-size: 18px; /* Increased font size */
+  padding: 10px;
+}
