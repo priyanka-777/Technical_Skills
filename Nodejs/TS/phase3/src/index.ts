@@ -2,17 +2,76 @@ import http from "http";
 import fs from "fs";
 import path from "path";
 import { getData,getDataPromise,fetchData } from "./CB_PM_AsAw"; 
+import { use,runMiddlewares } from "./middlewares/middlewares";
+const PORT = process.env.PORT || 3000;
+require("dotenv").config();
 
-const PORT = 3000;
+type note = {
+  id: number;
+  text: string;
+};
+
+let uifile = path.resolve("src", "ui", "notes.html");
+let uifilecontent = fs.readFileSync(uifile, "utf-8");
+let notes: note[] = [];
+let nextId = 1;
+
+function logger(
+  req: http.IncomingMessage,
+  res: http.ServerResponse<http.IncomingMessage>,
+  next: Function
+) {
+  console.log(`${req.method} ${req.url}`);
+  next();
+}
+
+function duration(
+  req: http.IncomingMessage,
+  res: http.ServerResponse<http.IncomingMessage>,
+  next: Function
+){
+  const start = Date.now();
+  res.on("finish", () => {
+    const duration = Date.now() - start;
+    console.log(`Request took ${duration}ms`);
+  });
+  next();
+}
+
+use(logger);
+use(duration);
+
+
 
 const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Hello from TypeScript backend!");
-  } else {
-    res.writeHead(404, { "Content-Type": "text/plain" });
-    res.end("Not Found");
-  }
+  runMiddlewares(req, res, () => {
+     if (req.url === "/") {
+       res.writeHead(200, { "Content-Type": "text/html" });
+       res.end(uifilecontent);
+     } else if (req.url === "/notes" && req.method === "GET") {
+       res.writeHead(200, { "Content-Type": "application/json" });
+       res.end(JSON.stringify(notes));
+     } else if (req.url === "/notes" && req.method === "POST") {
+       let body = "";
+       req.on("data", (chunk) => (body += chunk));
+       req.on("end", () => {
+         const { text } = JSON.parse(body);
+         const note = { id: nextId++, text };
+         notes.push(note);
+         debugger;
+         res.writeHead(201, { "Content-Type": "application/json" });
+         res.end(JSON.stringify(note));
+       });
+     } else if (req.url?.startsWith("/notes/") && req.method === "DELETE") {
+       const id = parseInt(req.url.split("/")[2]);
+       notes = notes.filter((note) => note.id !== id);
+       res.writeHead(204);
+       res.end();
+     } else {
+       res.writeHead(404, { "Content-Type": "text/plain" });
+       res.end("Not Found");
+     }
+   });
 });
 
 
