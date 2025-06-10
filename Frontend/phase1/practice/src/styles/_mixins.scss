@@ -1,0 +1,21 @@
+// Flexbox center
+@mixin flex-center($direction: row, $gap: 10px) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: center;
+}
+
+// Button styling
+@mixin button-style($bg-color: $primary-color, $color: white) {
+  padding: 10px 15px;
+  background-color: $bg-color;
+  color: $color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($bg-color, 5%);
+  }
+}
