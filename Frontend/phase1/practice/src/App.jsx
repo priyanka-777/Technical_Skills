@@ -16,6 +16,7 @@ export default App */
 
 import { useState } from 'react';
 import TodoItem from './components/TodoItem';
+import './styles/App.scss';
 
 function App() {
   const [todos, setTodos] = useState([]);
