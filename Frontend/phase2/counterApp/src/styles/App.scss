@@ -1,0 +1,43 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+
+  h1 {
+    color: #5c67f2;
+  }
+
+  h2 {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #5c67f2;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background-color: #4a54e1;
+      }
+
+      &:last-child {
+        background-color: #ff6666;
+
+        &:hover {
+          background-color: #e55353;
+        }
+      }
+    }
+  }
+}
