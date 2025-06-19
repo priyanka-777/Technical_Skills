@@ -1,24 +1,28 @@
-import { useState } from 'react';
+import { useState } from "react";
+import './styles/App.scss';
 
-function Form() {
-  const [email, setEmail] = useState("");
+function App(){
+  const [count, setCount]= useState(0)
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(email);
-  };
+  const increment=()=>{setCount((prev)=>prev+1)};
+  const decrement = () => {setCount((prev)=>prev-1)};
+  const reset = () => {setCount(0)};
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input 
-        type="email" 
-        value={email} 
-        placeholder="Enter email"
-        onChange={(e) => setEmail(e.target.value)} 
-      />
-      <button type="submit">Submit</button>
-    </form>
+    <div className="app">
+      <h1>🔢 Counter App</h1>
+      <h2>{count}</h2>
+      <div className="buttons">
+        <button onClick={increment}>➕ Increment</button>
+        <button onClick={decrement}>➖ Decrement</button>
+        <button onClick={reset}>🔄 Reset</button>
+      </div>
+    </div>
   );
+
+  
 }
 
-export default Form;
+
+
+export default App;
