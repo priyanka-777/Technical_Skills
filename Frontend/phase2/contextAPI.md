@@ -79,17 +79,7 @@ const Dashboard = () => {
 };
 ```
 
----
 
-### 📦 Folder Structure (Good Practice)
-
-```
-src/
-├── context/
-│   └── UserContext.js
-├── App.js
-├── Dashboard.js
-```
 
 ---
 
