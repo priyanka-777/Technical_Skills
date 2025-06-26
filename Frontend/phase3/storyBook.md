@@ -136,21 +136,6 @@ It will open a local development server (usually at `http://localhost:6006`) sho
 
 ---
 
-## 📁 Project Structure After Setup
-
-Your folder should now include:
-
-```
-my-app/
-├── .storybook/
-│   ├── main.js         // Storybook config
-│   ├── preview.js      // Global parameters or decorators
-├── src/
-│   ├── stories/        // Example components and stories
-│       ├── Button.jsx
-│       ├── Button.stories.jsx
-```
-
 ---
 
 ## 📄 Step 3: Create Your Own Story

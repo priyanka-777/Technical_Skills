@@ -1,7 +1,7 @@
-import './Card.css';
+import '../styles/Card.css';
 
-function Card({ title, description, footer }) {
-  return (
+const Card = ({ title, description, footer }) =>{
+   return (
     <div className="card">
       <h2>{title}</h2>
       <p>{description}</p>

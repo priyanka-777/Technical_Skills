@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import React from "react";
+import Button from "./components/Button";
+import Card from "./components/Card";
+import Modal from "./components/Modal";
+import { useState } from "react";
+import "./app.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isModalOpen, setModalOpen] = useState(true);
+  const handleClose = () => setModalOpen(false);
 
   return (
-    <>
+    <div>
+      <h1>Welcome to My App</h1>
+
+      <Card title="Hello!" description="This is a card." />
+      <Button onClick={() => setModalOpen(true)} label="Open Model" />
+
+      <Modal isOpen={isModalOpen} onClose={handleClose}>
+        <p>This is the modal content</p>
+      </Modal>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>🌐 Web Component: Custom Alert Box</h1>
+
+        <alert-box message="This is an info alert!"></alert-box>
+        <alert-box message="Be careful!" type="warning"></alert-box>
+        <alert-box message="Something went wrong." type="error"></alert-box>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
