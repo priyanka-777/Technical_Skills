@@ -64,11 +64,6 @@ Think of responsive design like **water** in a container —
 
 ---
 
-Great, Priyanka! 🎯
-Let’s dive into the **basics of Media Queries** — one of the most important tools for responsive design in CSS.
-
----
-
 ## 🧠 What are Media Queries?
 
 **Media Queries** allow you to apply **different CSS styles** based on the **device’s screen size, resolution, orientation**, and more.
